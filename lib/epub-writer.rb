@@ -21,8 +21,6 @@ class EPUBWriter
   CONTENT_DOCUMENT_PREFIX = 'content_document'
   CONTENT_DOCUMENT_EXTENSION = 'xhtml'
 
-  NCX_FILENAME = "toc.ncx"
-
   attr_reader :package, :content_documents
   attr_accessor :creator, :title, :identifier, :publisher
   attr_writer :language
@@ -93,7 +91,7 @@ class EPUBWriter
   end
 
   def ncx_file_path
-    "#{CONTAINER_DIRECTORY}/#{NCX_FILENAME}"
+    "#{CONTAINER_DIRECTORY}/#{NCX::FILENAME}"
   end
 
   def ncx_file_contents

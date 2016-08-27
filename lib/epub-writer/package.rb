@@ -30,7 +30,7 @@ class EPUBWriter
 
         package.manifest do |manifest|
           manifest.item({
-            'href' => EPUBWriter::NCX_FILENAME,
+            'href' => NCX::FILENAME,
             'media-type' => NCX::MIME_TYPE,
             'id' => NCX::ID
           })

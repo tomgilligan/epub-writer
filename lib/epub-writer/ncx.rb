@@ -1,5 +1,7 @@
 class EPUBWriter
   class NCX
+    FILENAME = "toc.ncx"
+
     MIME_TYPE = 'application/x-dtbncx+xml'
     ID = 'ncx'
 
