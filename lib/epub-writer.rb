@@ -100,8 +100,8 @@ class EPUBWriter
 
   # responsibility of minimizing number of files, naming files should be here?
   # except package file needs these names :-/
-  def write filename
-    Zip::OutputStream.open("#{filename}.#{FILENAME_EXTENSION}") do |stream|
+  def write io
+    Zip::OutputStream.write_buffer(io) do |stream|
       stream.put_next_entry(mimetype_file_path, nil, nil, Zip::Entry::STORED)
       stream.write(mimetype_file_contents)
 
