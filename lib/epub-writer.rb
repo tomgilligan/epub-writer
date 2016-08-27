@@ -7,8 +7,6 @@ require 'epub-writer/ncx'
 require 'epub-writer/content_document'
 
 class EPUBWriter
-  OUTPUT_DIR = 'epub_out/'
-
   CONTAINER_DIRECTORY = 'OEBPS'
   PACKAGE_FILENAME = 'content.opf'
 
