@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency       'nokogiri', '>= 1.6.8', '< 2.0'
   gem.add_runtime_dependency       'rubyzip', '>= 1.2.0', '< 2.0'
   gem.add_development_dependency   'minitest'
+  gem.add_development_dependency   'minitest-around'
 end

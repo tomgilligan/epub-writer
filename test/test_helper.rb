@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/around/spec'
 require 'tempfile'
 require 'epub-writer'
 
